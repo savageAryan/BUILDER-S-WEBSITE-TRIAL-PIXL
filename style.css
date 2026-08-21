@@ -1,4 +1,39 @@
 body{
-    background: linear-gradient(30deg,rgba(255, 242, 0, 0.659),pink);
+    background: linear-gradient(50deg,rgb(15, 36, 67),rgb(69, 14, 89));
     background-attachment: fixed;
+}
+#main_header{
+    color: rgb(98, 255, 0);
+    text-shadow: 0px 0px 30px white;
+}
+#iconholder:hover{
+    
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 100px;
+    width: auto;
+    background: linear-gradient(rgb(31, 4, 62),rgb(46, 36, 84));
+    border-bottom: solid 10px rgb(51, 16, 84);
+    box-shadow: 0px 0px 20px white;
+}
+#iconholder{
+    margin-top:-15px ;
+    margin-left: -8px;
+    margin-right: -8px;
+    background-attachment:fixed;
+    height: 100px;
+    width: auto;
+    background: linear-gradient(rgb(31, 4, 62),rgb(33, 24, 62));
+    border-bottom: solid 10px rgb(40, 3, 44);
+    
+}
+#appriciation{
+    left: 100px;
+    top: 100px;
+    margin: 0px;
+    background-attachment: fixed;
+    font-size: 50px;
+    padding-top: 25px;
+    padding-right:470px;
+    text-align: center;
 }
