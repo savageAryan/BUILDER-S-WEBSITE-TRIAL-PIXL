@@ -4,8 +4,9 @@ body{
     position: relative;
 }
 #main_header{
-    color: rgb(98, 255, 0);
-    text-shadow: 0px 0px 30px white;
+    color: rgb(100, 198, 255);
+    text-shadow: 0px 0px 30px rgb(136, 6, 138) ;
+    font-size: 50px;
 }
 #iconholder:hover{
     
@@ -75,26 +76,54 @@ body{
     right: 0;
 }
 #body2{
+    top: 40px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border: solid 5px red;
+    background-color: beige;
     padding: 20px;
     padding-right: 20px;
     height: 600px;
-    border: solid 2px darkblue;
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
 }
 #imagecontainer{
-    position: relative;
-    align-self: center;
     
-    height: 600px;
-    width: 400px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 800px;
+    justify-content: center;
+    width: 500px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: double 8px rgb(84, 88, 210);
+    box-sizing: border-box;
 }
 #myimage{
     position: absolute;
-    align-items: center;
     border-radius: 20px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 600px;
+}
+#aboutme{
+    padding: 10px;
+    width: 600px;
+    height: 900;
+    border: solid,5px,rgb(0, 0, 0);
+    font-size: 40px;
+    font-family:"Elsies";
+    font-style:oblique;
+    color: rgb(17, 2, 93);
+
+}
+#myname{
+    position: absolute;
+    bottom: 0px;
+    border: solid,2px,blue;
+    font-size: 80px;
+    font-family:"Honk";
 }
