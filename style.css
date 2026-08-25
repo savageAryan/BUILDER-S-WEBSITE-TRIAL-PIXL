@@ -4,9 +4,14 @@ body{
     position: relative;
 }
 #main_header{
-    color: rgb(17, 163, 248);
-    text-shadow: 0px 0px 30px rgb(139, 213, 255) ;
-    font-size: 50px;
+    position: relative;
+    left: 70px;
+    transform: scaleY(1.25);
+    width: 600px;
+    height: 120px;
+    color: rgb(170, 29, 0);
+    font-size: 90px;
+    font-family: "Permanent Marker";
 }
 #iconholder:hover{
     
@@ -79,8 +84,10 @@ body{
     top: 40px;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
-    border: solid 5px rgba(255, 0, 0, 0.8);
-    background-color: rgba(245, 245, 220, 0.8);
+    background-color: beige;
+    background-image:repeating-linear-gradient(transparent 0px,transparent 44px,rgb(146, 28, 95) 45px),linear-gradient(to bottom,rgb(242, 153, 168) 0%,white 40%);
+    background-blend-mode: multiply;
+    background-size: 100% 45px, 100% 100%;
     padding: 20px;
     padding-right: 20px;
     height: 1000px;
@@ -88,6 +95,16 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
+}
+#body2::before {
+    content: "";
+    background-color: beige;
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: rgb(200, 50, 50);
 }
 #imagecontainer{
     
@@ -116,14 +133,16 @@ body{
     height: 600px;
 }
 #aboutme{
-    padding: 10px;
+    position: relative;
+    bottom: 30px;
+    left: 70px;
     width: 600px;
     height: 900;
-    border: solid,5px,rgb(0, 0, 0);
     font-size: 40px;
-    font-family:"Elsies";
+    font-family:"Bad Script";
     font-style:oblique;
     color: rgb(17, 2, 93);
+    line-height: 45px;
 
 }
 #myname{
