@@ -12,6 +12,7 @@ body{
     color: rgb(170, 29, 0);
     font-size: 90px;
     font-family: "Permanent Marker";
+    -webkit-text-stroke: 1px rgb(216, 27, 27);
 }
 #iconholder:hover{
     
@@ -98,7 +99,6 @@ body{
 }
 #body2::before {
     content: "";
-    background-color: beige;
     position: absolute;
     left: 80px;
     top: 0;
