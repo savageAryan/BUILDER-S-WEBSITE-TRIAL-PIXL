@@ -43,12 +43,10 @@ body{
     margin-left: 10px;
     margin-bottom: 35px;
 
-    background-attachment: fixed;
     font-size: 45px;
     text-align: center;
     color: rgb(132, 188, 240);
     font-family: "Rubik Spray Paint";
-
 }
 #icon{
     border-top-left-radius: 20px;
@@ -96,6 +94,7 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     position: relative;
+
 }
 #body2::before {
     content: "";
@@ -103,8 +102,8 @@ body{
     left: 80px;
     top: 0;
     bottom: 0;
-    width: 3px;
-    background: rgb(200, 50, 50);
+    width: 2px;
+    background: rgba(210, 60, 60, 0.65);
 }
 #imagecontainer{
     
@@ -112,26 +111,51 @@ body{
     position: absolute;
     top: 20px;
     right: 20px;
-    height: 800px;
+    height: 600px;
     justify-content: center;
     width: 500px;
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    border: double 8px rgb(84, 88, 210);
+    border: solid 1px pink;
     border-top-left-radius: 120px;
     border-bottom-right-radius: 120px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: ;
     box-sizing: border-box;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    
 }
-#myimage{
+#myimage {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 25px;
+    -webkit-mask-image: radial-gradient(ellipse at centre, black 55%, transparent 100%);
+       mask-image: radial-gradient(
+        ellipse at center,
+        black 55%,
+        transparent 100%
+    );
+}
+#myimage:hover{
+    overflow: hidden;
+    scale: 1.08;
+    transition: all ease;
     position: absolute;
-    border-radius: 20px;
-    border-top-left-radius: 120px;
-    width: 400px;
-    height: 600px;
+    cursor: pointer;
 }
+#myimage:active{
+    position: absolute;
+    align-self: center;
+    top: 40px;
+    border: solid 2px rgb(149, 205, 255);
+    animation-name: flip;
+    animation-duration: 1s;
+}
+
 #aboutme{
     position: relative;
     bottom: 30px;
@@ -143,12 +167,16 @@ body{
     font-style:oblique;
     color: rgb(17, 2, 93);
     line-height: 45px;
-
 }
 #myname{
     position: absolute;
     bottom: 0px;
-    border: solid,2px,blue;
+
     font-size: 80px;
     font-family:"Honk";
+}
+@keyframes flip{
+    35%{transform: scale(65%) rotateY(180deg);
+        opacity: 0%;
+    
 }
