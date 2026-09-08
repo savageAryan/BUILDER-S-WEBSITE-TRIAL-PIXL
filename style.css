@@ -121,7 +121,6 @@ body{
     border-top-left-radius: 120px;
     border-bottom-right-radius: 120px;
     border-top-right-radius: 30px;
-    border-bottom-right-radius: ;
     box-sizing: border-box;
     backdrop-filter: blur(2px);
     overflow: hidden;
@@ -179,4 +178,5 @@ body{
     35%{transform: scale(65%) rotateY(180deg);
         opacity: 0%;
     
+}
 }
