@@ -7,3 +7,5 @@ const images = ["images/me1",
 let current = 0;
 let interval;
 image.addEventListener("click",() => {current = (current+1)% images.length;image.src = images[current]});
+const music = document.getElementById("music")
+document.addEventListener("click",() => {music.play();},{once: true});
