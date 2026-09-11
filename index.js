@@ -29,5 +29,16 @@ music.addEventListener("ended",() =>{
     playrandomsong();
 });
 const audiobutton = document.getElementById("audiobutton")
-audiobutton.addEventListener("click",() => music.pause);
+const audiobuttonicon = document.querySelector("#audiobutton button img")
+audiobutton.addEventListener("click",() => {
+    if (music.paused) {
+        music.play();
+        audiobuttonicon.src = "assets/play.png"
+    
+    } else {
+        music.pause();
+        audiobuttonicon.src = "assets/mute.png"
+    }
+});
+
 
