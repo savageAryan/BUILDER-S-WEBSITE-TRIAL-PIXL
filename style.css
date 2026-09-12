@@ -20,7 +20,7 @@ body h2{
     right: 40px;
     color: rgb(22, 1, 13);
     font-family: "Fascinate";
-    font-size: 50px;
+    font-size: 60px;
 }
 #iconholder:hover{
     
@@ -97,7 +97,7 @@ body h2{
     background-size: 100% 45px, 100% 100%;
     padding: 20px;
     padding-right: 20px;
-    height: 1000px;
+    height: 1200px;
     width: 1200px;
     margin-left: 20px;
     margin-right: 20px;
@@ -130,12 +130,30 @@ body h2{
     border-bottom-right-radius: 120px;
     border-top-right-radius: 30px;
     box-sizing: border-box;
-    backdrop-filter: blur(2px);
+
+    backdrop-filter: blur(3px);
     overflow: hidden;
     
 }
+#imagecontainer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        repeating-linear-gradient(
+            transparent 0px,
+            transparent 35px,
+            rgba(255, 255, 255, 0.385) 36px,
+            rgba(237, 221, 221, 0.197) 39px,
+            transparent 40px
+        );
+
+    pointer-events: none;
+}
 #myimage {
     width: 360px;
+    z-index: 2;
     height: 360px;
     object-fit: cover;
     overflow: hidden;
@@ -218,6 +236,43 @@ body h2{
    image-rendering: pixelated;
    height: 100%;
    width: 100%;
+}
+
+.fa-forward-step{
+    position: fixed;
+    color: rgb(241, 212, 106);
+    scale: 3;
+    top: 420px;
+    left: 40px;
+    rotate: 90deg;
+}
+#audiobutton button:hover #forward{
+    display: grid;
+}
+#projects{
+    width: 1100px;
+    position: relative;
+    top: 140px;
+    left: 80px;
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+}
+.project-card{
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid rgb(0, 0, 0) 2px;
+    width: 400px;
+    height: 450px;
+    float: 0,0,350px;
+}
+.project-card img{
+    border: solid 2px red;
+    width: 350px;
+    height: 200px;
+    float: 0,0,350px;
 }
 @keyframes flip{
     35%{transform: scale(65%) rotateY(180deg);
