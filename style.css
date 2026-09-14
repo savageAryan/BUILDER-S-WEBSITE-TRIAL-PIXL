@@ -258,7 +258,7 @@ body h2{
     left: 80px;
     display: flex;
     gap: 30px;
-    overflow-x:scroll;
+    overflow-x:hidden;
     
 }
 .project-card{
@@ -294,9 +294,48 @@ body h2{
     border-bottom: solid 3px pink;
     scale: 0.95;
 }
+#status{
+    font-size: larger;
+    font-weight: 800;
+}
+#status::after{
+    position: relative;
+    left: 60px;
+    content: "  INCOMPLETE";
+    color: rgb(255, 0, 0);
+    font-weight: 300;
+}
+.project-card button{
+    position: relative;
+    top: 30px;
+    border-radius: 30px;
+    width: 110px;
+    height: 40px;
+    left: 230px;
+    color: rgba(255, 255, 255, 0.811);
+    
+    font-size: 20px;
+    font-weight: 600;
+    border: solid 2px rgba(248, 96, 121, 0.818);
+    background: linear-gradient(to left, rgba(253, 108, 132, 0.886) ,transparent);
+}
+#project-track{
+    display: flex;
+    gap: 30px;
+    animation: cardmove 10s linear infinite;
+}
+#project-track:hover{
+    animation-play-state: paused;
+}
 @keyframes flip{
     35%{transform: scale(65%) rotateY(180deg);
         opacity: 0%;
     
 }
+}
+@keyframes cardmove{
+    from {transform: translateX(0);
+    }
+    to {transform: translateX(-50%);
+    }
 }
