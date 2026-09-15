@@ -1,8 +1,8 @@
 const image = document.getElementById("myimage")
 const images = [
     "images/me1.jpg",
-    "images/me2.png",
-    "images/me3.png"
+    "images/me2.jfif",
+    "images/me3.jpg"
 ];
 let current = 0;
 let interval;
@@ -12,6 +12,8 @@ const musics = ["audios/song1.mp3",
     "audios/song2.mp3",
     "audios/song3.mp3",
     "audios/song4.mp3",
+    "audios/song5.mp3",
+    "audios/song6.mp3"
     
 ]
 let currentsong = 1;
