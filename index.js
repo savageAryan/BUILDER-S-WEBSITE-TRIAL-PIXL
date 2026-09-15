@@ -22,9 +22,6 @@ function playrandomsong(){
     music.play();
 }
 playrandomsong();
-document.addEventListener("click",() =>{
-    playrandomsong();
-    },{once: true});
 music.addEventListener("ended",() =>{
     playrandomsong();
 });
@@ -40,5 +37,9 @@ audiobutton.addEventListener("click",() => {
         audiobuttonicon.src = "assets/mute.png"
     }
 });
-
+const randombutton = document.querySelector("#random")
+randombutton.addEventListener("click",() => {
+        playrandomsong();
+    
+})
 
